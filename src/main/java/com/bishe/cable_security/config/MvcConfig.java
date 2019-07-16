@@ -12,6 +12,7 @@ public class MvcConfig implements WebMvcConfigurer {
      * 配置页面映射
      * @param registry
      */
+    @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/home").setViewName("homePage");
         registry.addViewController("/").setViewName("loginPage");
@@ -21,8 +22,14 @@ public class MvcConfig implements WebMvcConfigurer {
     }
 
     //配置静态资源
+    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 
 }

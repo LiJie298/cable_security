@@ -3,7 +3,6 @@ package com.bishe.cable_security.util;
 import java.security.MessageDigest;
 
 /**
- * @author changyu3
  * @date 2018/11/26
  * @description:
  */
