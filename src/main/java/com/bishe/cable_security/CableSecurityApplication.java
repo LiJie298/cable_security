@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableJpaRepositories(basePackages = "com.bishe.cable_security.repository")
-@SpringBootApplication(scanBasePackages = {"com.bishe.cable_security"},exclude= {DataSourceAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"com.bishe.cable_security"})
 public class CableSecurityApplication {
 
 	public static void main(String[] args) {

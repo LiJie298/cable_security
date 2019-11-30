@@ -1,7 +1,11 @@
 package com.bishe.cable_security.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,6 +14,8 @@ import java.util.List;
  * 监控数据实体
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class MonitorData<T> {
 
     private String no;
@@ -28,10 +34,6 @@ public class MonitorData<T> {
      */
     private List<Temperature> temperatures;
 
-    public MonitorData() {
-        temperatures = new ArrayList<>();
-
-    }
 
     class Temperature {
         /**

@@ -107,10 +107,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new SavedRequestAwareAuthenticationSuccessHandler() {
             @Override
             public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+//                super.onAuthenticationSuccess(request, response, authentication);
                 User userDetails = (User) authentication.getPrincipal();
                 logger.info("USER : " + userDetails.getName() + " LOGIN SUCCESS !  ");
                 response.sendRedirect("/home");
-//                super.onAuthenticationSuccess(request, response, authentication);
             }
         };
     }

@@ -8,17 +8,17 @@ import javax.persistence.*;
 import java.util.Date;
 
 //用户
-//@Entity
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//@Table(name="user")
+@Table(name="user")
 public class User {
     /**
      * 编号
      */
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int no;
     /**
      * 姓名
@@ -39,7 +39,7 @@ public class User {
     /**
      * 电话
      */
-    private int tel;
+    private String tel;
     /**
      * 账号信息
      */
