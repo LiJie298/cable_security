@@ -20,15 +20,14 @@ import java.util.List;
 public class UserController {
 
 
-
     @Autowired
     private UserService userService;
 
 
-    @RequestMapping(value = "/findAll",method = RequestMethod.POST)
+    @RequestMapping(value = "/findAll", method = RequestMethod.POST)
     @ResponseBody
-    public String signUp(){
-        List<User> users  = userService.findAll();
+    public String signUp() {
+        List<User> users = userService.findAll();
         return BakMsg.successMsg(JSONObject.toJSONString(users));
     }
 

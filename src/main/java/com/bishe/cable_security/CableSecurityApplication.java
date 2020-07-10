@@ -9,8 +9,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication(scanBasePackages = {"com.bishe.cable_security"})
 public class CableSecurityApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CableSecurityApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CableSecurityApplication.class, args);
+    }
 
 }

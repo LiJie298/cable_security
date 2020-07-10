@@ -11,6 +11,7 @@ import java.util.List;
 public interface MonitorRepository {
     /**
      * 保存数据
+     *
      * @param monitorData
      */
     void saveOneMonitorData(MonitorData monitorData);
@@ -18,11 +19,12 @@ public interface MonitorRepository {
 
     /**
      * 通过单元楼号查询上报数据
+     *
      * @param bNo
      * @param startDate
      * @param endDate
      * @return
      */
-   List<MonitorData> findBybNo(String bNo, Date startDate, Date endDate, Pageable pageable);
+    List<MonitorData> findBybNo(String bNo, Date startDate, Date endDate, Pageable pageable);
 
 }

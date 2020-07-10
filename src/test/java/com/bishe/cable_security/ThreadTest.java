@@ -26,7 +26,7 @@ public class ThreadTest {
                 Future future = threadPoolExecutor.submit(() -> {
                     System.out.print(finalI + " , ");
                     try {
-                        Thread.sleep(2000-finalI);
+                        Thread.sleep(2000 - finalI);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

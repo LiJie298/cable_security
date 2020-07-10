@@ -84,18 +84,19 @@ public class BakMsg {
 
     /**
      * 获取返回信息
+     *
      * @param status
      * @param msg
      * @param data
      * @return
      */
-    public static String backMsg(int status,String msg, Object data){
-        if(status==0){
-            return errorMsg(msg,data);
-        }else if(status ==1){
+    public static String backMsg(int status, String msg, Object data) {
+        if (status == 0) {
+            return errorMsg(msg, data);
+        } else if (status == 1) {
             return successMsg(data);
-        }else {
-            return new BakMsg(status,msg,data).toString();
+        } else {
+            return new BakMsg(status, msg, data).toString();
         }
     }
 
@@ -106,7 +107,7 @@ public class BakMsg {
      * @return
      */
     public static String errorMsg(String msg) {
-        return errorMsg(msg,"");
+        return errorMsg(msg, "");
     }
 
     @Override

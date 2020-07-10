@@ -11,7 +11,7 @@ public class GreetingController {
 
     @MessageMapping("/hello")
     @SendTo("topic/greetions")
-    public BakMsg greeting(BakMsg bakMsg)throws Exception{
-        return new BakMsg(1,"hello",new JSONObject());
+    public BakMsg greeting(BakMsg bakMsg) throws Exception {
+        return new BakMsg(1, "hello", new JSONObject());
     }
 }

@@ -10,6 +10,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
     /**
      * 配置页面映射
+     *
      * @param registry
      */
     @Override

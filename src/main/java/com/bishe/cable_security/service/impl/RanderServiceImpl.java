@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class RanderServiceImpl implements RanderService {
 
 
-    private RanderTwoService  randerTwoService;
+    private RanderTwoService randerTwoService;
 
     @Override
     @Transactional

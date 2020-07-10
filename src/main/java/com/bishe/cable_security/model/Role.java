@@ -9,7 +9,7 @@ public enum Role {
     //普通用户
     NORMAL("2");
 
-    private String  type;
+    private String type;
 
     public String getType() {
         return type;
@@ -19,8 +19,8 @@ public enum Role {
         this.type = type;
     }
 
-    private  Role(String type){
-        this.type=type;
+    private Role(String type) {
+        this.type = type;
     }
 
 }

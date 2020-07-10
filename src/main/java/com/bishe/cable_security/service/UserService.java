@@ -10,7 +10,7 @@ public interface UserService {
 
     List<User> findAll();
 
-    boolean updateUserPassword(String no,String password);
+    boolean updateUserPassword(String no, String password);
 
     boolean addUser(User user);
 }

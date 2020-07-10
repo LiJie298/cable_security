@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="user")
+@Table(name = "user")
 public class User {
     /**
      * 编号
@@ -53,11 +53,12 @@ public class User {
      */
     private Date createTime;
 
-    public User(String name,String password) {
+    public User(String name, String password) {
         this.name = name;
         this.password = password;
         this.role = Role.NORMAL;
     }
+
     public User(String name) {
         this.name = name;
         this.role = Role.NORMAL;

@@ -62,5 +62,4 @@ public class SecurityUser extends User implements UserDetails {
     }
 
 
-
 }
