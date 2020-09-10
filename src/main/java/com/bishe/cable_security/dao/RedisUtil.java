@@ -1,9 +1,11 @@
-package com.bishe.cable_security.util;
+package com.bishe.cable_security.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
+import javax.annotation.Resource;
 
 /**
  * @author lijie
@@ -67,6 +69,7 @@ public class RedisUtil {
     public Object get(String key) {
         try {
             Jedis jedis = jedisPool.getResource();
+
             return jedis.get(key);
         } catch (Exception e) {
             e.printStackTrace();

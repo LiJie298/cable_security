@@ -1,6 +1,6 @@
 package com.bishe.cable_security;
 
-import com.bishe.cable_security.util.RedisUtil;
+import com.bishe.cable_security.dao.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
