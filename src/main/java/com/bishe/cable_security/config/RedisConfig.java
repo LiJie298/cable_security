@@ -12,6 +12,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 /**
  * @author lijie
  * @date 2020-09-10 21:25
+ * 消息监听
  */
 @Configuration
 public class RedisConfig {
